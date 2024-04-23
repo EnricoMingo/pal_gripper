@@ -3,7 +3,7 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
   <!--File includes-->
-  <xacro:include filename="$(find pal_urdf_utils)/urdf/deg_to_rad.urdf.xacro" />
+  <xacro:include filename="$(find pal_urdf_utils)/urdf/deg_to_rad.xacro" />
   <xacro:include filename="$(find pal_gripper_description)/urdf/gripper.gazebo.xacro" />
 
   <xacro:property name="gripper_eps" value="0.001" />
@@ -86,7 +86,7 @@
     <material>Gazebo/Black</material>
   </gazebo>
 
-  <joint name="${name}_right_finger_joint" type="prismatic">
+  <joint name="${name}_right_finger_joint" type="fixed">
     <origin rpy="0 0 0" xyz="0. 0 0" />
     <parent link="${name}_link" />
     <child link="${name}_right_finger_link" />
@@ -126,7 +126,7 @@
     <material>Gazebo/Black</material>
   </gazebo>
 
-  <joint name="${name}_left_finger_joint" type="prismatic">
+  <joint name="${name}_left_finger_joint" type="fixed">
     <origin rpy="0 0 0" xyz="0. 0 0" />
     <parent link="${name}_link" />
     <child link="${name}_left_finger_link" />

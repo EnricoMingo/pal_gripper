@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<robot name="/home/enrico/catkin_ws/src/pal_gripper/pal_gripper_description/meshes/gripper_link_collision.stl" version="1.0">
+  <link name="1.00000_1.00000_1.00000">
+    <collision>
+      <origin xyz="3.04735e-06 -4.275475e-06 -0.043997999999999995" rpy="3.1415611327924937 2.129162037094234e-05 1.1881566149387182"/>
+      <geometry>
+        <cylinder radius="0.0651301" length="0.05239620003790586"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>
